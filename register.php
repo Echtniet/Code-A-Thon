@@ -31,43 +31,56 @@
 				<div class="row">
 					<form name="registerform">
 						<div class="col-lg-12">
-							<label>Comapny Name:</label>
-							<input type="text" name="cname" ng-model="cname" class="form-control" ng-required="true">
-						</div>
-						<br>
-						<div class="col-lg-6">
-							<label>Email</label>
-							<input type="email" name="cemail" ng-model="cemail" class="form-control" ng-required="true">
-						</div>
-						<div class="col-lg-6">
-							<label>Username</label>
-							<input type="text" name="cusername" ng-model="cusername" class="form-control" ng-required="true">
-						</div>
-						<br>
-						<div class="col-lg-5">
-							<label>Street</label>
-							<input type="text" name="cstreet" ng-model="cstreet" class="form-control" ng-required="true">
-						</div>
-						<div class="col-lg-3">
-							<label>City</label>
-							<input type="text" name="ccity" ng-model="ccity" class="form-control" ng-required="true">
-						</div>
-						<div class="col-lg-2">
-							<label>State</label>
-							<input type="text" name="cstate" ng-model="cstate" class="form-control" ng-required="true">
-						</div>
-						<div class="col-lg-2">
-							<label>Zip</label>
-							<input type="text" name="czip" ng-model="czip" class="form-control" ng-required="true">
-						</div>
-						<br>
-						<div class="col-lg-2">
-							<label>Phone area</label>
-							<input type="number" name="carea" ng-model="carea" class="form-control" ng-required="true">
-						</div>
-						<div class="col-lg-3">
-							<label>local</label>
-							<input type="number" name="clocal" ng-model="clocal" class="form-control" ng-required="true">
+							<div class="row">
+								<div class="col-lg-12">
+									<label>Comapny Name:</label>
+									<input type="text" name="cname" ng-model="cname" class="form-control" ng-required="true">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Email</label>
+									<input type="email" name="cemail" ng-model="cemail" class="form-control" ng-required="true">
+								</div>
+								<div class="col-lg-6">
+									<label>Username</label>
+									<input type="text" name="cusername" ng-model="cusername" class="form-control" ng-required="true">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-5">
+									<label>Street</label>
+									<input type="text" name="cstreet" ng-model="cstreet" class="form-control" ng-required="true">
+								</div>
+								<div class="col-lg-3">
+									<label>City</label>
+									<input type="text" name="ccity" ng-model="ccity" class="form-control" ng-required="true">
+								</div>
+								<div class="col-lg-2">
+									<label>State</label>
+									<input type="text" name="cstate" ng-model="cstate" class="form-control" ng-required="true">
+								</div>
+								<div class="col-lg-2">
+									<label>Zip</label>
+									<input type="text" name="czip" ng-model="czip" class="form-control" ng-required="true">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2">
+									<label>Phone area</label>
+									<input type="number" name="carea" ng-model="carea" class="form-control" ng-required="true">
+								</div>
+								<div class="col-lg-3">
+									<label>local</label>
+									<input type="number" name="clocal" ng-model="clocal" class="form-control" ng-required="true">
+								</div>
+							</div>
+							<div class="row">
+								<br>
+								<div class="col-lg-2 col-lg-offset-5">
+									<button class="btn btn-success" ng-disabled="registerform.$invalid">Register</button>
+								</div>
+							</div>
 						</div>
 					</form>
 				</div>
