@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>register page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <style type="text/css">
+
+	    	input.ng-invalid.ng-dirty{
+			    border-color: red;
+			}
+			input.ng-valid {
+				border-color: green;
+			}
+			select.ng-dirty{
+				border-color: green;
+			}
+
+	    </style>
+	</head>
+
+	<body>
+		<div class="row" id="controller" ng-app="app" ng-controller="ctrl">
+			<div class="col-lg-6 col-lg-offset-3 well">
+				<div class="row">
+					<form name="registerform">
+						<div class="col-lg-12">
+							<label>Comapny Name:</label>
+							<input type="text" name="cname" ng-model="cname" class="form-control" ng-required="true">
+						</div>
+						<br>
+						<div class="col-lg-6">
+							<label>Email</label>
+							<input type="email" name="cemail" ng-model="cemail" class="form-control" ng-required="true">
+						</div>
+						<div class="col-lg-6">
+							<label>Username</label>
+							<input type="text" name="cusername" ng-model="cusername" class="form-control" ng-required="true">
+						</div>
+						<br>
+						<div class="col-lg-5">
+							<label>Street</label>
+							<input type="text" name="cstreet" ng-model="cstreet" class="form-control" ng-required="true">
+						</div>
+						<div class="col-lg-3">
+							<label>City</label>
+							<input type="text" name="ccity" ng-model="ccity" class="form-control" ng-required="true">
+						</div>
+						<div class="col-lg-2">
+							<label>State</label>
+							<input type="text" name="cstate" ng-model="cstate" class="form-control" ng-required="true">
+						</div>
+						<div class="col-lg-2">
+							<label>Zip</label>
+							<input type="text" name="czip" ng-model="czip" class="form-control" ng-required="true">
+						</div>
+						<br>
+						<div class="col-lg-2">
+							<label>Phone area</label>
+							<input type="number" name="carea" ng-model="carea" class="form-control" ng-required="true">
+						</div>
+						<div class="col-lg-3">
+							<label>local</label>
+							<input type="number" name="clocal" ng-model="clocal" class="form-control" ng-required="true">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="js/jobdatingApp.js"></script>
+		<script src="js/jobdatingControllers.js"></script>
+	</body>
+</html>

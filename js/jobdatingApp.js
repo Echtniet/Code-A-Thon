@@ -1,0 +1,1 @@
+var registerapp = angular.module('app', []);
