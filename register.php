@@ -43,7 +43,7 @@
 								<div ng-switch-when="Recruiter">
 									<div class="row">
 										<div class="col-lg-12">
-											<label>Comapny Name:</label>
+											<label>Company Name:</label>
 											<input type="text" name="cname" ng-model="cname" class="form-control" ng-required="true">
 										</div>
 									</div>
