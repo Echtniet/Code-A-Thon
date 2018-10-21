@@ -164,8 +164,8 @@
 									<div class="row">
 										<div class="col-lg-4">
 											<label>School Level:</label>
-											<select ng-model="selectedlevel"  class="form-control input-sm" ng-options="l for l in schoollevel" ng-required="true">
-												
+											<select ng-model="$parent.selectedlevel"  class="form-control input-sm" ng-required="true">
+												<option ng-repeat="l in schoollevel" value="{{l.level}}">{{l.level}}</option>
 											</select>
 										</div>
 										
@@ -181,7 +181,7 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</div>{{selectedlevel}}
 		</div>
 		<script src="js/jobdatingApp.js"></script>
 		<script src="js/jobdatingControllers.js"></script>
