@@ -3,13 +3,21 @@ registerapp.controller('ctrl', function ($scope, $http) {
     $scope.schoollevel = ["Undergraduate", "Graduate"];
 
     $scope.submitrecruiter = function(){
-        alert("Recruiter has been submitted");
-        $scope.selectedtype = null;
+        $http.post("submitrecruiter.php", {"cname":$scope.cname,"cemail":$scope.cemail,"cusername":$scope.cusername,"cpsw":$scope.cpsw,"cstreet":$scope.cstreet,"ccity":$scope.ccity,"cstate":$scope.cstate,"czip":$scope.czip,"carea":$scope.carea,"clocal":$scope.clocal})
+        .then(function(response){
+            alert(response.data);
+        });
     }
 
     $scope.submitseeker = function(){
-        alert("Seeker has been submitted");
-        $scope.selectedtype = null;
+        $http.post("submitseeker.php", {"username":$scope.username,"psw":$scope.psw})
+        .then(function(response){
+            if (response.data == 0) {
+                $scope.loginfailed = !$scope.loginfailed;
+            }else{
+                window.location.href = "index.html";
+            }
+        });
     }
 });
 
