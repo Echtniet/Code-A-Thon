@@ -22,7 +22,7 @@ loginapp.controller('loginctrl', function ($scope, $http) {
             if (response.data == 0) {
                 $scope.loginfailed = !$scope.loginfailed;
             }else{
-                window.location.href = "register.php";
+                window.location.href = "index.html";
             }
         });
     }
