@@ -1,6 +1,6 @@
 registerapp.controller('ctrl', function ($scope, $http) {
     $scope.accounttypes = ["Recruiter", "Seeker"];
-    $scope.schoollevel = ["Undergraduate", "Graduate"];
+    $scope.schoollevel = [{level:"Undergraduate"}, {level:"Graduate"}];
 
     $scope.submitrecruiter = function(){
         $http.post("submitrecruiter.php", {"cname":$scope.cname,"cemail":$scope.cemail,"cusername":$scope.cusername,"cpsw":$scope.cpsw,"cstreet":$scope.cstreet,"ccity":$scope.ccity,"cstate":$scope.cstate,"czip":$scope.czip,"carea":$scope.carea,"clocal":$scope.clocal})

@@ -11,7 +11,6 @@
 	$stmt->close();
 	$sql = "INSERT INTO recruiters (RecruiterID, CompanyName, Street, City, State, ZIP, Area, Local, Email, UserName, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 	$stmt = $conn->prepare($sql);
-	$test = 1;
 	$stmt->Bind_param("issssiiisss", $nextID, $info->cname, $info->cstreet, $info->ccity, $info->cstate, $info->czip, $info->carea, $info->clocal, $info->cemail, $info->cusername, $info->cpsw);
 	if ($stmt->execute()) {
 		echo 1;
