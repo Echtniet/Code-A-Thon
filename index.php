@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "jobdating";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,7 +15,7 @@ $stmt = $conn->prepare("SELECT companyname, street, city, state, zip FROM recrui
 $stmt->execute(); 
 $stmt->bind_result($company, $street, $city, $state, $zip);
 while ($stmt->fetch()) {
-	echo $company . ", " . $street . ", " . $city . ", " . $state . ", " . $zip;
+	echo $companyname . ", " . $street . ", " . $city . ", " . $state . ", " . $zip;
 }
 
 

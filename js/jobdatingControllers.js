@@ -9,14 +9,11 @@ registerapp.controller('ctrl', function ($scope, $http) {
         });
     }
 
+    //change this one get all the values from html and make page submitseeker.php and add the values to databases
     $scope.submitseeker = function(){
-        $http.post("submitseeker.php", {"username":$scope.username,"psw":$scope.psw})
+        $http.post("submitseeker.php", {"fname":$scope.fname,"lname":$scope.lname,"semail":$scope.semail,"susername":$scope.susername,"spsw":$scope.spsw,"respsw":$scope.respsw,"sstreet":$scope.sstreet,"scity":$scope.scity,"sstate":$scope.sstate,"szip":$scope.szip,"sarea":$scope.sarea,"slocal":$scope.slocal,"sLevel":$scope.selectedlevel})
         .then(function(response){
-            if (response.data == 0) {
-                $scope.loginfailed = !$scope.loginfailed;
-            }else{
-                window.location.href = "index.html";
-            }
+            alert(response.data);
         });
     }
 });
