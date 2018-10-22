@@ -80,7 +80,7 @@
                 <a href="facebook.com">
                 <img alt="Facebook" src="images/FBlogo.png" width="40px" height="40px" class="floatRight"></a>
                 
-                <a href="youtube.com">
+                <a href="https://www.youtube.com/channel/UCHrZMqYiFPuK4GGmUDgyoPA/featured">
                 <img alt="Youtube" src="images/YTlogo.png" width="40px" height="40px" class="floatRight"></a><br>
             <br>
             <p class="floatRight"> Copyright &copy; Bits n' Bytes</p>
