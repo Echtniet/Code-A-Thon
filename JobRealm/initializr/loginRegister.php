@@ -22,14 +22,13 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <div class="logoArea"><a href="index.html">
+                <div class="logoArea"><a href="index.php">
                  <img class="header-logo" class="logoAnimation" src="images/logoOnly.png" height=50px"  alt="Logo">
                 <h1 class="title">JobRealm</h1>
                 </a></div>
                 <nav>
                     <ul>
-                        <li><a class="navButton" href="index.html">Home</a></li>
-                        <li><a class="navButton" href="loginRegister.html">Login/Register</a></li>
+                        <?php include("nav.php") ?>
                     </ul>
                 </nav>
             </header>
@@ -37,15 +36,14 @@
         <div class="main-content">
                  <img class="header-logo" class="logoAnimation" src="images/logoOnly.png" height=75px"  alt="Logo">
         <h2> Hello, please choose whether you want to <br>login or need to register for an account <br></h2>
-        <h3 class="button"><a href="login.html">Login</a></h3>
-        <h3 class="button"><a href="registerIntial.html">Register</a></h3>
+        <h3 class="button"><a href="login.php">Login</a></h3>
+        <h3 class="button"><a href="register.php">Register</a></h3>
         </div>
         <div class="footer-container">
             <!--<footer class="wrapper">-->
             <footer>
             <ul class="floatLeft">
-                <li><a class="navButton" href="index.html">Home</a></li>
-                <li><a class="navButton" href="register.php">Login/Register</a></li>
+                <?php include('footer.php'); ?>
             </ul>
                 <a href="index.html">
                 <img src="images/logoOnly.png" width="40px" height="40px" alt="logo" class="floatRight"></a>

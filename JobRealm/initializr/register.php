@@ -10,6 +10,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 	    <style type="text/css">
 
 	    	input.ng-invalid.ng-dirty{
@@ -26,7 +30,24 @@
 	</head>
 
 	<body>
+		<div class="header-container">
+            <header class="wrapper clearfix">
+                <div class="logoArea"><a href="index.php">
+                 <img class="header-logo" class="logoAnimation" src="images/logoOnly.png" height=50px"  alt="Logo">
+                <h1 class="title">JobRealm</h1>
+                </a></div>
+                <nav>
+                    <ul>
+                        <?php include("nav.php") ?>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 		<div class="row" id="controller" ng-app="app" ng-controller="ctrl">
+			<br>
+			<div class="imgcontainer">
+		        <img class="logoAnimation" src="images/logoOnly.png" height="120px"  alt="Logo">
+			</div>
 			<div class="col-lg-6 col-lg-offset-3 well">
 				<div class="row">
 					<form name="registerform">
@@ -86,7 +107,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-lg-2">
+										<div class="col-lg-3">
 											<label>Phone area</label>
 											<input type="number" name="carea" ng-model="$parent.carea" class="form-control" ng-required="true">
 										</div>
@@ -152,7 +173,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-lg-2">
+										<div class="col-lg-3">
 											<label>Phone area</label>
 											<input type="number" name="sarea" ng-model="$parent.sarea" class="form-control" ng-required="true">
 										</div>
@@ -183,6 +204,24 @@
 				</div>
 			</div>
 		</div>
+		<div class="footer-container">
+            <!--<footer class="wrapper">-->
+            <footer>
+            <ul class="floatLeft">
+                <?php include('footer.php'); ?>
+            </ul>
+                <a href="index.html">
+                <img src="images/logoOnly.png" width="40px" height="40px" alt="logo" class="floatRight"></a>
+                
+                <a href="facebook.com">
+                <img alt="Facebook" src="images/FBlogo.png" width="40px" height="40px" class="floatRight"></a>
+                
+                <a href="youtube.com">
+                <img alt="Youtube" src="images/YTlogo.png" width="40px" height="40px" class="floatRight"></a><br>
+            <br>
+            <p class="floatRight"> Copyright &copy; Bits n' Bytes</p>
+            </footer>
+        </div>
 		<script src="js/jobdatingApp.js"></script>
 		<script src="js/jobdatingControllers.js"></script>
 	</body>
