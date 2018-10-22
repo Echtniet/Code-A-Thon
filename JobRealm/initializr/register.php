@@ -192,6 +192,7 @@
 										
 									</div>
 									<div class="row">
+										<span style="color:red" ng-show="registerfailed">Register failed, Please try again</span>
 										<br>
 										<div class="col-lg-2 col-lg-offset-5">
 											<button class="btn btn-success" ng-disabled="registerform.$invalid" ng-click="submitseeker()">Register</button>
