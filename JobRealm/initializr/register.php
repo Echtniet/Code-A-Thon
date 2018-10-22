@@ -185,7 +185,7 @@
 									<div class="row">
 										<div class="col-lg-4">
 											<label>School Level:</label>
-											<select ng-model="selectedlevel"  class="form-control input-sm" ng-options="l for l in schoollevel" ng-required="true">
+											<select ng-model="$parent.selectedlevel"  class="form-control input-sm" ng-options="l for l in schoollevel" ng-required="true">
 												
 											</select>
 										</div>
